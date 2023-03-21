@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:var(--gray);
+    margin-top: 0rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+}
+
+html, body{
+    --gray: hsl(240, 9%, 89%);
+    --black: hsl(240, 6%, 13%);
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    
+    
+}
+
+body{
+    display: grid;
+    place-items: center;
+    
+}
+main{
+    background: url(images/background.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+}
+.container{
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--gray);
+    
+}
+.avatar{
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    position: relative
+}
+
+.avatar > img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+h1{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+p{
+    margin-top: 2rem;
+}
+
+#alternar-exibicao{
+    margin: 30px;
+    padding: 10px;
+    background-color: rgb(211, 47, 47);
+    border: none;
+    color: var(--gray);
+    border-radius: 6px;
+    cursor: pointer;
+}
+#alternar-exibicao:hover{
+  padding: 10px;
+  background-color: rgb(235, 69, 69);
+  border: none;
+  color: var(--gray);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (min-width: 960px) {
+	
+    body {
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background: url(images/desktop-back.svg) no-repeat center/cover; 
+      
+      
+    }
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(24, 24, 24, 1);
+        opacity: 0.7;
+        z-index: -1;
+        
+      }
+      .f {
+        position: fixed;
+        width: 4rem;
+        height: 8.75rem;
+        background: linear-gradient(rgba(255, 0, 142, 1), 
+        rgba(255, 205, 30, 1));
+        top: 0;
+        z-index: 5;
+      }
+    
+      .broke {
+        position: absolute;
+        width: 5rem;
+        height: 0.5rem;
+        background: rgba(18, 18, 20, 1);
+        z-index: 4;
+        top: 8.6rem;
+        
+      }
+      .avatar {
+        margin: 10.5rem auto 0;
+      }
+      main {
+        position: fixed;
+        width: 358px;
+        height: 540px;
+        min-height: 540px;
+        border-radius: 8px;
+        
+      }
+      
+      .container {
+        margin-top: -7rem;
+      }
+    
+      ul {
+        margin-top: 2rem;
+      }
+     
+}    

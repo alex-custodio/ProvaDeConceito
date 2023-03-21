@@ -1,0 +1,24 @@
+{
+    "kurt": {
+        "nome": "Kurt Cobain - Nirvana",
+        "musicas": [
+            "Smells Like Teen Spirit",
+            "Come As You Are",
+            "Lithium",
+            "All Apologies",
+            "About A Girl"
+        ],
+        "imagem": "images/kurt-cobain.jpg"
+    },
+    "freddie": {
+        "nome": "Freddie Mercury",
+        "musicas": [
+            "Bohemian Rhapsody",
+            "Love of My Life",
+            "We Are The Champions",
+            "Crazy Little Thing Called Love",
+            "Don't Stop Me Now"
+        ],
+        "imagem": "images/freddie-mercury.jpg"
+    }
+}
